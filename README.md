@@ -1,4 +1,4 @@
-# PHP-calculator
+# PHP-Theater app
 This application allows you to simulate a theater were you can: book (R), buy (V) and release (L) a chair
 
 Application features:
