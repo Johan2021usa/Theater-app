@@ -1,0 +1,274 @@
+/***************************Header-footer************************/
+.background{
+    background-image: url(https://media.istockphoto.com/id/1355176914/es/foto/cine-durante-la-proyecci%C3%B3n-de-una-pel%C3%ADcula-animada.jpg?s=612x612&w=0&k=20&c=_bHuwCyeLe4OWa460FrinSI3FAjvOpanUJd1kmSLPBY=);
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+/*Positions*/
+.header{
+    /*Center content mode #!*/
+    display: grid;
+    place-content: center;
+    /*Style*/
+    background-color: #E8FF00;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.footer{
+    /*Center content mode #!*/
+    display: grid;
+    place-content: center;
+    /*element-Style*/
+    background-color: rgba(161, 0, 255, 60%);
+    text-align: center;
+    padding: 20px;
+    /*Text-Style*/
+    font-family: Georgia;
+    font-size: 25px;
+}
+.strong{
+    font-family: Georgia;
+    font-size: 25px;
+    color: #E8FF00;
+    font-weight: bold;
+}
+.soft{
+    font-family: Georgia;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+/***************************Content************************/
+/***************Secondary-containers****************/
+.grid_container{
+    /*Center content mode #!*/
+    display: grid;
+    place-content: center;
+    text-align: center;    
+    /*Style*/
+    padding: 20px;
+    /*Transparecen, ce be applied using rgba, colors can be found using #ff or with three values rgb**/
+    background-color: rgba(169, 255, 0, 60%);
+}
+
+.orientation_text_bold{
+    font-family: Georgia;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.internal_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.vertical_text{
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+}
+
+/*Chairs container*/
+.ch_grid_horiz{
+    /*Center content using grid*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: right;
+    /*Style*/
+    background-color: #E8FF00;
+}
+.ch_grid_horiz div{
+    /*Style*/
+    font-family: Georgia;
+    text-align: center;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    /*Testing*/
+    border-style: solid;
+    border-width: 0.3px;
+}
+
+.chairs_grid_row{
+    /*Center content using grid*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /*Style*/
+    background-color: #E8FF00;
+}
+
+.chairs_index_bold{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 50px;
+    width: 50px;
+    padding: 3px;
+    font-weight: bold;
+}
+.chairs_grid_row div{
+    /*Style*/
+    font-family: Georgia;
+    text-align: center;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    /*Testing*/
+    border-style: solid;
+    border-width: 0.3px;
+}
+
+.afirmativeMessage{
+    border-style: solid;
+    margin-top: 10px;
+    background-color:#C3FF10;
+    border-style: none;
+    font-family: Georgia;
+    font-size: 25px;
+    color: black;
+}
+
+.negativeMessage{
+    border-style: solid;
+    margin-top: 10px;
+    background-color:#FF1010;
+    border-style: none;
+    font-family: Georgia;
+    font-size: 25px;
+    color: white;
+}
+
+
+/********************Buttons*****************/
+.btn_grid_container{
+    /*Center content mode #!*/
+    display: grid;
+    place-content: center;
+    /*Style*/
+    background-color:#E8FF00;
+    padding: 20px;
+}
+
+.btn_div{
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    place-content: center;
+    margin-top: 10px;
+}
+
+.btn_style{
+    /*Font style*/
+    font-family: Georgia;
+    font-size: 30px;
+    /*Button style*/
+    background-color:  #00e08e;
+    border-style: none;
+    /*pading -margin*/
+    margin-left: 10px;
+}
+
+.btn_style:hover {
+    /*Font style*/
+    font-family: Georgia;
+    font-size: 30px;
+    /*Button style*/
+    background-color:#A100FF;
+    border-style: none;
+    cursor: pointer;
+}
+
+/********************Forms*****************/
+.form_orientation{
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.form_orientation input{
+    font-family: Georgia;
+    font-size: 25px;
+    width: 40px;
+    margin-left: 5px;
+    border-style: none;
+}
+
+#value_chair{
+    font-family: Georgia;
+    font-size: 25px;
+    width: 60px;
+    margin-left: 5px;
+    border-style: none;
+}
+
+.form_orientation label{
+    font-family: Georgia;
+    font-size: 25px;
+    margin-left: 5px;
+
+}
+
+/******Radio and check box elements********/
+
+.btn_div input[type="radio"]{
+    /*With display none we take away these radio, it's invisible and doesn't occupe any spce in the dom*/
+    display: none;
+}
+
+.btn_div label{
+    background-color:#00e08e;
+    /*Font style*/
+    font-family: Georgia;
+    font-size: 30px;
+    /*Button style*/
+    border-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.check_btn:hover{
+    /*Font style*/
+    font-family: Georgia;
+    font-size: 30px;
+    /*Button style*/
+    background-color:#A100FF;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn_div label[class="check_btn"]::before{
+    /*important to use*/
+    content: "";
+    /*Height and width defines the entire area of our square*/
+    width: 17px;
+    height: 17px;
+    /*Important to use */
+    display: inline-block;
+    /*It provides color to all square, not required for radio*/
+    background: none;
+    /*This provides a border to our square*/
+    border: 3px solid #E8FF00;
+    /*This becomes the square to a circle*/
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.btn_div input[type="radio"]:checked + label {
+    background: #A100FF;
+    border-radius: 2px;
+}
+
+.comprar{
+    background-color: aquamarine;
+}
